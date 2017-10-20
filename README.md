@@ -36,4 +36,4 @@ if it works properly, Congrats! you can now do something awesome.
 
 ## License
 
-This project is released under [The MIT License (MIT)](https://github.com/tr3ee/goutils/blob/master/LICENSE)
+this project is released under [the MIT license](https://github.com/tr3ee/goutils/blob/master/LICENSE)
