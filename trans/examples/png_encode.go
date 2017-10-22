@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"time"
-	"tr3e/trans/layers"
+	"tr3e/utils/trans/layers"
 	banner "tr3e/utils/cli-banner"
 )
 
