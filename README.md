@@ -10,13 +10,6 @@
 $ git clone https://github.com/tr3ee/goutils.git tr3e/utils
 ```
 
-Once it's done,run the following command to fix dependencies
-
-```sh
-$ go get tr3e/utils/trans/layers
-$ go get tr3e/utils/
-```
-
 ## Quick Test
 
 create a go file named `hello-world.go`
@@ -44,7 +37,7 @@ $ go run hello-world.go
 ```
 if it works properly, Congrats! you can now do something awesome.
 
-Otherwise,run the command `go get` under the folder of `hello-world.go`
+Otherwise,run the command `go get` under the directory of `hello-world.go`
 
 ## License
 
