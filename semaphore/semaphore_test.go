@@ -1,23 +1,21 @@
 package semaphore
 
 import (
-	"testing"
 	"math/rand"
-	"fmt"
+	"testing"
 	"time"
 )
 
 func TestSemaphore(t *testing.T) {
-	s := NewSemaphore(3)
+	s := NewSemaphore(5)
 
-	for{
+	for index := 0; index < 20; index++ {
 		s.P()
-		go func(){
-			t := rand.Intn(5)
-			fmt.Println("sub called,sleeping",t)
-			time.Sleep(time.Duration(t)*time.Second)
+		go func() {
+			r := rand.Intn(3)
+			t.Log("sub called,sleeping", r)
+			time.Sleep(time.Duration(r) * time.Second)
 			s.V()
 		}()
 	}
-
 }
